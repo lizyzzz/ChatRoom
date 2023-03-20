@@ -1,0 +1,28 @@
+<!-- # 0 注册账号 -->
+<!-- # 1 登陆 -->
+<!-- # 2 发信息 -->
+<!-- # 3 退出登录 -->
+<!-- cmd -->
+
+<!-- # 当 cmd 为 1 时有消息 -->
+<!-- message -->
+
+
+<!-- # xml格式: 以<label></label>包括数据 -->
+<!-- 客户端到服务端 -->
+<cmd>1</cmd>
+<name>lizy</name>
+<color>0</color>
+<message>I am a message</message>
+
+
+<!-- 服务端到客户端 -->
+<!-- # 0 注册失败 -->
+<!-- # 1 注册成功 -->
+<!-- # 2 登录失败 -->
+<!-- # 3 登录成功 -->
+<!-- # 4 广播信息 -->
+<code>1</code>
+<name>lizy</name>
+<color>0</color>
+<message>I am a message</message>
