@@ -1,8 +1,7 @@
 # ChatRoom
 使用方法：
 
-在工作空间目录下编译：
-
+在工作空间目录下编译：  
   mkdir build
   
   cd build
