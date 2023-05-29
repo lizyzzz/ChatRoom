@@ -31,11 +31,10 @@
 ### 注意事项
 &emsp;&emsp;任务队列中的任务类型需要采用function<void()>的形式，以保证任务函数的类型统一。在入任务队列时统一使用packaged_task进行封装。
 ## 服务端和客户端实现逻辑
-### UserFile类
-&emsp;&emsp;实现了保证线程安全的文件读写功能  
-&emsp;&emsp;&emsp;&emsp;新增用户：把用户名和密码写到文件。  
-&emsp;&emsp;&emsp;&emsp;查找用户：给定用户名查找其密码。（注意对于要多次读的文件，读到文件尾后，需要用clear()成员函数清除错误流状态）。  
-&emsp;&emsp;后续可以用数据库来实现提高效率。  
+### UserSQL类
+&emsp;&emsp;实现了保证线程安全的文件读写数据库功能  
+&emsp;&emsp;&emsp;&emsp;新增用户：把用户名和密码写到数据库中的表。  
+&emsp;&emsp;&emsp;&emsp;查找用户：给定用户名查找其密码，查询数据库。
 ### ChatRoomServer类
 &emsp;&emsp;使用epoll实现IO多路复用模型，即使用epoll监听事件，事件发生后解析xml格式报文使用线程池执行任务。  
 &emsp;&emsp;任务类型有：注册账号请求，登录请求，退出登录请求，发信息（广播信息服务）。  
