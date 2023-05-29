@@ -14,6 +14,7 @@ add_executable(chatRoomServer src/chatRoomServer.cpp)
 target_link_libraries(chatRoomServer 
     pthread
     cppNetWork
+    mysqlclient
 )
 
 add_executable(chatRoomClient src/chatRoomClient.cpp)
