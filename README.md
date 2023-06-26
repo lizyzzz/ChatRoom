@@ -1,4 +1,5 @@
-# ChatRoom
+# ChatRoom  
+一个用C++11实现的多人网络聊天室
 ![github](https://github.com/lizyzzz/ChatRoom/blob/main/Show.jpg)
 ## 使用方法：
 ### 在工作空间目录下编译：  
