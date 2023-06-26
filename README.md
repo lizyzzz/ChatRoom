@@ -1,6 +1,6 @@
 # ChatRoom  
 一个用C++11实现的多人网络聊天室
-![github](https://github.com/lizyzzz/ChatRoom/blob/main/Show.jpg)
+
 ## 使用方法：
 ### 在工作空间目录下编译：  
   >mkdir build  
@@ -16,7 +16,8 @@
   >./chatRoomClient 192.168.xxx.xxx yyyy  
   >
   其中 192.168.xxx.xxx 服务端主机 ip 地址, yyyy 服务端主机端口  
-
+## 展示画面
+![github](https://github.com/lizyzzz/ChatRoom/blob/main/Show.jpg)
 # 代码说明
 ## cppNetWork.h和cppNetWork.cpp
 ### TcpServer and TcpClient服务端和客户端类
