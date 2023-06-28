@@ -2,11 +2,23 @@
 一个用C++11实现的多人网络聊天室
 
 ## 使用方法：
-### 在工作空间目录下编译：  
-  >mkdir build  
-  cd build  
-  cmake ..  
-  >make  
+### 在工作空间目录下编译： 
+```
+mkdir build  
+cd build  
+cmake ..  
+make
+```
+### 数据库配置方法：
+```
+CREATE DATABASE account_information;
+USE account_information;
+CREATE TABLE infor(
+id INT PRIMARY KEY AUTO_INCREMENT,
+username VARCHAR(20) UNIQUE,
+`password` VARCHAR(20) NOT NULL
+);
+```
 ### 运行方法：  
 服务端：  
   >./chatRoomServer 192.168.xxx.xxx yyyy  
